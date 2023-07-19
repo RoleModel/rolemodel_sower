@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleModelSower
+module RolemodelSower
   class Base
     def initialize(data)
       @data = data

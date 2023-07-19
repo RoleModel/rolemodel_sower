@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleModelSower
+module RolemodelSower
   module Adapters
     extend ActiveSupport::Autoload
 

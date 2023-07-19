@@ -6,7 +6,7 @@ require 'rolemodel_sower/version'
 
 Gem::Specification.new do |s|
   s.name        = 'rolemodel_sower'
-  s.version     = RoleModelSower::VERSION.dup
+  s.version     = RolemodelSower::VERSION.dup
   s.platform    = Gem::Platform::RUBY
   s.summary     = 'A Ruby gem to simplify Seed data creation for Rails applications.'
   s.email       = 'consult@rolemodelsoftware.com'

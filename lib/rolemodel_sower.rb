@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleModelSower
+module RolemodelSower
   extend ActiveSupport::Autoload
 
   eager_autoload do
@@ -25,7 +25,7 @@ module RoleModelSower
       logger = Logger.new($stdout)
       pluralized_name = seed_name.to_s.classify
       logger.info "Seeding #{pluralized_name}..." if Rails.env.development?
-      "RoleModelSower::Adapters::#{adapter.to_s.upcase}".constantize.all(seed_name).each(&:load!)
+      "RolemodelSower::Adapters::#{adapter.to_s.upcase}".constantize.all(seed_name).each(&:load!)
       logger.info "Seeding #{pluralized_name}... done" if Rails.env.development?
     end
   end

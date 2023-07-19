@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleModelSower
+module RolemodelSower
   module Adapters
     class YAML < Base
       def self.file_extension

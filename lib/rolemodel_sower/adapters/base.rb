@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleModelSower
+module RolemodelSower
   module Adapters
     class Base
       def self.file_extension
@@ -12,11 +12,11 @@ module RoleModelSower
       end
 
       def self.path(seed_name)
-        Rails.root.join("db/sower_data/#{seed_name.to_s.pluralize}#{file_extension}")
+        Rails.root.join("db/rolemodel_sower_data/#{seed_name.to_s.pluralize}#{file_extension}")
       end
 
       def self.class_name(seed_name)
-        "Sower::#{seed_name.to_s.classify}".constantize
+        "RolemodelSower::#{seed_name.to_s.classify}".constantize
       end
 
       def self.all(seed_name)

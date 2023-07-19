@@ -2,7 +2,7 @@
 
 require 'json'
 
-module RoleModelSower
+module RolemodelSower
   module Adapters
     class JSON < Base
       def self.file_extension
