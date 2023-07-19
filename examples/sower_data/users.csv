@@ -1,0 +1,4 @@
+first_name,last_name,email,password
+First,User,first.user@example.com,password
+Second,User,second.user@example.com,password
+Third,User,third.user@example.com,password

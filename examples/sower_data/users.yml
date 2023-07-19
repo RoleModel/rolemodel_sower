@@ -1,0 +1,15 @@
+-
+  first_name: 'First'
+  last_name: 'User'
+  email: 'first.user@example.com'
+  password: 'password'
+-
+  first_name: 'Second'
+  last_name: 'User'
+  email: 'second.user@example.com'
+  password: 'password'
+-
+  first_name: 'Third'
+  last_name: 'User'
+  email: 'third.user@example.com'
+  password: 'password'
