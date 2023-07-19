@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Sower
-  class User < Sower::Base
+module RolemodelSower
+  class User < RolemodelSower::Base
     def load!
       user = ::User.create_with(
         first_name: @data[:first_name],
