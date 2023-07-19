@@ -2,7 +2,7 @@
 
 require 'csv'
 
-module Sower
+module RoleModelSower
   module Adapters
     class CSV < Base
       def self.file_extension

@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-module Sower
+module RoleModelSower
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      desc 'Copy Sower default files'
+      desc 'Copy RoleModelSower default files'
       source_root File.expand_path('templates', __dir__)
 
       def copy_config
-        template 'config/initializers/sower.rb'
+        template 'config/initializers/rolemodel_sower.rb'
       end
     end
   end

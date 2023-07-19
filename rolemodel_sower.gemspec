@@ -2,11 +2,11 @@
 
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sower/version'
+require 'rolemodel_sower/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'sower'
-  s.version     = Sower::VERSION.dup
+  s.name        = 'rolemodel_sower'
+  s.version     = RoleModelSower::VERSION.dup
   s.platform    = Gem::Platform::RUBY
   s.summary     = 'A Ruby gem to simplify Seed data creation for Rails applications.'
   s.email       = 'consult@rolemodelsoftware.com'

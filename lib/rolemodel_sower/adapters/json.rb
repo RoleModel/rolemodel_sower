@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require 'csv'
+require 'json'
 
-module Sower
+module RoleModelSower
   module Adapters
-    class TSV < Base
+    class JSON < Base
       def self.file_extension
-        '.tsv'
+        '.json'
       end
 
       def self.load_data(seed_name)
-        ::CSV.read(path(seed_name), headers: true, col_sep: "\t")
+        ::JSON.parse(path(seed_name).read)
       end
     end
   end
