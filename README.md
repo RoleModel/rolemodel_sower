@@ -94,3 +94,25 @@ RolemodelSower.setup do |config|
   config.adapter = :json
 end
 ```
+
+## Development
+
+To build the gem locally, run: `gem build rolemodel_sower.gemspec`
+
+To test the gem locally, use the path option in your Gemfile:
+
+```ruby
+gem 'rolemodel_sower', path: '../rolemodel_sower'
+```
+
+## Publishing
+
+Make sure you are an owner of the gem.
+
+You also need to be signed in to rubygmes by running:
+
+`gem signin`
+
+To publish, run:
+
+`gem push rolemodel_sower-{major.minor.patch}.gem`
