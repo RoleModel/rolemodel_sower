@@ -12,7 +12,7 @@ module RolemodelSower
       end
 
       def self.path(seed_name)
-        Rails.root.join("db/rolemodel_sower_data/#{seed_name.to_s.pluralize}#{file_extension}")
+        Rails.root.join("#{RolemodelSower.data_path}/#{seed_name.to_s.pluralize}#{file_extension}")
       end
 
       def self.class_name(seed_name)

@@ -14,6 +14,9 @@ module RolemodelSower
   mattr_accessor :adapter
   @@adapter = :yaml
 
+  mattr_accessor :data_path
+  @@data_path = 'db/rolemodel_sower_data'
+
   def self.setup
     yield self
   end
