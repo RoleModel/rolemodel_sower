@@ -25,10 +25,15 @@ module RolemodelSower
 
   def self.seed!(*seed_names)
     seed_names.each do |seed_name|
+      current_seed_name = seed_name.try(:keys)&.first || seed_name
+      current_adapter = seed_name.try(:values)&.first || adapter
+      pluralized_name = current_seed_name.to_s.classify
+
       logger = Logger.new($stdout)
-      pluralized_name = seed_name.to_s.classify
       logger.info "Seeding #{pluralized_name}..." if Rails.env.development?
-      "RolemodelSower::Adapters::#{adapter.to_s.upcase}".constantize.all(seed_name).each(&:load!)
+
+      "RolemodelSower::Adapters::#{current_adapter.to_s.upcase}".constantize.all(current_seed_name).each(&:load!)
+
       logger.info "Seeding #{pluralized_name}... done" if Rails.env.development?
     end
   end
