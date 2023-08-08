@@ -3,7 +3,7 @@
 module RolemodelSower
   class Organization < RolemodelSower::Base
     def load!
-      ::Organization.find_or_create_by! name: @data[:name]
+      ::Organization.find_or_create_by! name: data[:name]
     end
   end
 end

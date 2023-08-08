@@ -68,9 +68,9 @@ module RolemodelSower
   class User < RolemodelSower::Base
     def load!
       ::User.find_or_create_by!(
-        first_name: @data[:first_name],
-        last_name: @data[:last_name],
-        email: @data[:last_name]
+        first_name: data[:first_name],
+        last_name: data[:last_name],
+        email: data[:last_name]
       )
     end
   end
